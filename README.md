@@ -8,12 +8,14 @@ This repository documents a standardized **Program Management Framework** for la
 ---
 
 ## 🛠 Phase 1: Initiation & Regulatory Scoping
-Before any product development begins, a strict regulatory feasibility study is conducted to ensure alignment with Indonesian banking laws.
+Before any product development begins, a strict regulatory feasibility study is conducted to ensure alignment with Indonesian lending laws (Fintech & Banking).
 
 ### Key Regulatory Checkpoints (OJK)
-* **POJK No. 57/POJK.03/2020:** Digital Banking Implementation & Risk Management.
-* **POJK Compliance:** Reviewing capital requirements and risk-weighted assets (ATMR).
-* **Sharia Compliance (If applicable):** Verification with the Sharia Supervisory Board (DPS) regarding *Akad* (contract) validity.
+* **POJK No. 10/POJK.05/2022:** The primary regulation for IT-Based Co-Funding Services (Fintech Lending / LPBBTI). Focus on:
+    * **Batas Maksimum Pemberian Pendanaan (BMPP):** ensuring lending limits are respected.
+    * **Risk Mitigation:** Mandatory credit scoring and insurance/guarantee requirements.
+* **SEOJK No. 19/SEOJK.06/2023:** Compliance regarding ethical collection practices (Billing/Debt Collection standards).
+* **POJK No. 13/POJK.03/2021:** If the product involves **Channeling** (Bank collaboration), ensuring the "Cooperation with Third Parties" clause is met.
 
 **Deliverable:** *Product Requirement Document (PRD) v1.0 - Legal & Compliance Sign-off.*
 
@@ -24,7 +26,7 @@ Defining the credit risk parameters using the **5C Principles of Credit** adapte
 
 | Risk Component | Metric / Validation Method | Mitigation Strategy |
 | :--- | :--- | :--- |
-| **Character** | BI Checking (SLIK OJK), Credit History | Automated blacklist filtering & KYC verification. |
+| **Character** | SLIK OJK (BI Checking) & Alternative Data | Automated blacklist filtering & e-KYC verification. |
 | **Capacity** | Cash Flow Analysis, Debt Service Ratio (DSR) | Threshold limits set at < 35% of monthly net income. |
 | **Capital** | Business Equity & Asset Valuation | Minimum down payment (DP) requirements for asset financing. |
 | **Collateral** | Appraisal Value vs. Liquidation Value | Conservative LTV (Loan-to-Value) limits based on asset class. |
@@ -42,7 +44,7 @@ Managing the timeline and cross-functional stakeholders using a **Waterfall-Agil
 * **Operations/Sales:** Training on SOPs for loan origination and document verification.
 
 ### Typical Launch Timeline
-1.  **Month 1:** Scoping, Market Research, and Regulatory Feasibility.
+1.  **Month 1:** Scoping, Market Research, and Regulatory Feasibility (POJK Check).
 2.  **Month 2:** Credit Model Development & Operational SOP Drafting.
 3.  **Month 3:** Pilot Launch (Sandbox Environment) & User Acceptance Testing (UAT).
 4.  **Month 4:** Commercial Launch & Post-Implementation Review (PIR).
@@ -53,7 +55,7 @@ Managing the timeline and cross-functional stakeholders using a **Waterfall-Agil
 Post-launch tracking of success metrics to ensure portfolio health.
 
 * **Financial Metrics:** ROI, Net Interest Margin (NIM), Fee-based Income.
-* **Risk Metrics:** NPF (Non-Performing Financing), Cost of Credit.
+* **Risk Metrics:** TKB90 (Success Rate) vs. TWP90 (Default Rate), Cost of Credit.
 * **Operational Metrics:** Turn Around Time (TAT), Approval Rate vs. Application Rate.
 
 ---
